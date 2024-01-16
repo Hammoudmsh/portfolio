@@ -217,7 +217,7 @@ if __name__ == "__main__":
 	    "Publications":"clipboard",
 	    # "Papers":"clipboard",
 	    # "Conferences":"clipboard",
-	    "Rewards":"Award fill",#"trophy fill",
+	    "Rewards":"trophy fill",
 	    "Resume":"pencil square",
 	    "Contact":"house"#"link",
 	    }
