@@ -293,774 +293,774 @@ if __name__ == "__main__":
 	        with right_column:
 	            st.image(Image.open(ICONS_IMAGES_LOADED["ABOUT_ME_IMAGE"]))
 	# Create section for Work Experience
-	# elif choose == "Experience":
+	elif choose == "Experience":
 
-	#     #st.write("---")
-	# 	# with st.expander(st.header("Experience"), expanded = False):
-	# 	with st.container():
-	# 		st.header(choose)
-	# 		for idx, i in enumerate(list(df_experience.index)):
-	# 			START_DATAE = df_experience.loc[i, 'From']
-	# 			END_DATAE = df_experience.loc[i, 'To']
-	# 			COMPANY_NAME = df_experience.loc[i, 'Name']
-	# 			COMPANY_URL = df_experience.loc[i, 'Link']
-	# 			COMPANY_POS = df_experience.loc[i, 'Location']
-	# 			WORK_POSITION = df_experience.loc[i, 'Position']
-	# 			WORK_LEARNT= df_experience.loc[i, 'Learned']
-	# 			if WORK_LEARNT!="None":
-	# 				WORK_LEARNT = WORK_LEARNT.split("\n")
-
-
-	# 			COMPANY_IMAGE = df_experience.loc[i, 'image']
-
-	# 			WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					print("COMPANY_IMAGE", COMPANY_IMAGE)
-	# 					if COMPANY_IMAGE!="None": 
-	# 						image_column, company_column, company_link, company_pos_column = st.columns((0.5, 1,0.1, 0.5))
-	# 						COMPANY_IMAGE = Image.open(f"images/{COMPANY_IMAGE}")
-	# 						with image_column:
-	# 							st.image(COMPANY_IMAGE)
-	# 					else:
-	# 						company_column, company_link, company_pos_column = st.columns((2,0.1, 0.5))
-
-	# 			# COMPANY_IMAGE = None
-	# 			# WORK_ID = idx+1
-	# 			# if 1:
-	# 			# # with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 			# 	# st.header("Experience", divider=True)
-	# 			# 	with st.container():
-	# 			# 		if COMPANY_IMAGE: 
-	# 			# 			image_column, company_column, company_link, company_pos_column = st.columns((0.5, 1,0.1, 0.5))
-	# 			# 			with image_column:
-	# 			# 				st.image(img_bitmetrix)
-	# 			# 		else:
-	# 			# 			company_column, company_link, company_pos_column = st.columns((2,0.1, 0.5))
-
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					if COMPANY_NAME !="None":
-	# 						with company_column:
-	# 							st.subheader(f"{WORK_ID}.\t{COMPANY_NAME}")
-	# 							# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
-	# 					if COMPANY_URL!="None":
-	# 						with company_link:
-	# 							st.markdown(f"[:link:]({COMPANY_URL})")
-	# 					if COMPANY_POS!="None":
-	# 						with company_pos_column:
-	# 							st.markdown(f"{COMPANY_POS}")
+	    #st.write("---")
+		# with st.expander(st.header("Experience"), expanded = False):
+		with st.container():
+			st.header(choose)
+			for idx, i in enumerate(list(df_experience.index)):
+				START_DATAE = df_experience.loc[i, 'From']
+				END_DATAE = df_experience.loc[i, 'To']
+				COMPANY_NAME = df_experience.loc[i, 'Name']
+				COMPANY_URL = df_experience.loc[i, 'Link']
+				COMPANY_POS = df_experience.loc[i, 'Location']
+				WORK_POSITION = df_experience.loc[i, 'Position']
+				WORK_LEARNT= df_experience.loc[i, 'Learned']
+				if WORK_LEARNT!="None":
+					WORK_LEARNT = WORK_LEARNT.split("\n")
 
 
-	# 					margine, role_column, date_column = st.columns((0.1, 2,0.5))
+				COMPANY_IMAGE = df_experience.loc[i, 'image']
+
+				WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						print("COMPANY_IMAGE", COMPANY_IMAGE)
+						if COMPANY_IMAGE!="None": 
+							image_column, company_column, company_link, company_pos_column = st.columns((0.5, 1,0.1, 0.5))
+							COMPANY_IMAGE = Image.open(f"images/{COMPANY_IMAGE}")
+							with image_column:
+								st.image(COMPANY_IMAGE)
+						else:
+							company_column, company_link, company_pos_column = st.columns((2,0.1, 0.5))
+
+				# COMPANY_IMAGE = None
+				# WORK_ID = idx+1
+				# if 1:
+				# # with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+				# 	# st.header("Experience", divider=True)
+				# 	with st.container():
+				# 		if COMPANY_IMAGE: 
+				# 			image_column, company_column, company_link, company_pos_column = st.columns((0.5, 1,0.1, 0.5))
+				# 			with image_column:
+				# 				st.image(img_bitmetrix)
+				# 		else:
+				# 			company_column, company_link, company_pos_column = st.columns((2,0.1, 0.5))
+
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						if COMPANY_NAME !="None":
+							with company_column:
+								st.subheader(f"{WORK_ID}.\t{COMPANY_NAME}")
+								# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
+						if COMPANY_URL!="None":
+							with company_link:
+								st.markdown(f"[:link:]({COMPANY_URL})")
+						if COMPANY_POS!="None":
+							with company_pos_column:
+								st.markdown(f"{COMPANY_POS}")
+
+
+						margine, role_column, date_column = st.columns((0.1, 2,0.5))
 						
-	# 					with date_column:
-	# 						st.write(f"{START_DATAE}-{END_DATAE}")
-	# 					with role_column:
-	# 						st.markdown(f"{WORK_POSITION}")
+						with date_column:
+							st.write(f"{START_DATAE}-{END_DATAE}")
+						with role_column:
+							st.markdown(f"{WORK_POSITION}")
 							
-	# 						if WORK_LEARNT !="None":				
-	# 							points = ""
-	# 							for p in WORK_LEARNT:
-	# 								st.markdown(f"""- {p}""")
+							if WORK_LEARNT !="None":				
+								points = ""
+								for p in WORK_LEARNT:
+									st.markdown(f"""- {p}""")
 
-	# 						SKILLS = df_experience.loc[i, 'Skills']
-	# 						if SKILLS!="None":				
-	# 							SKILLS = SKILLS.split(";")
-	# 							skills_txt = ''
-	# 							for s in SKILLS:
-	# 								skills_txt += f'`{s}` '
-	# 							st.markdown(f"""
-	# 								\t{skills_txt}
-	# 							""")
-	# 					st.divider()
+							SKILLS = df_experience.loc[i, 'Skills']
+							if SKILLS!="None":				
+								SKILLS = SKILLS.split(";")
+								skills_txt = ''
+								for s in SKILLS:
+									skills_txt += f'`{s}` '
+								st.markdown(f"""
+									\t{skills_txt}
+								""")
+						st.divider()
 
-	# elif choose == "Education":
-	#     #st.write("---")
-	# 	# with st.expander(st.header("Experience"), expanded = False):
-	# 	with st.container():
-	# 		st.header(choose)
-	# 		# START_DATAE = '01.01.2022'
-	# 		# END_DATAE = "01.01.2023"
-	# 		# COMPANY_NAME = "Company Name"
-	# 		# COMPANY_URL = 'https://bitmetrix.ai'
-	# 		# COMPANY_POS = "Moscow"
-	# 		# WORK_POSITION = "Embedded system Engineer"
-	# 		# COMPANY_IMAGE = None
-	# 		# WORK_ID = 1	
-	# 		for idx, i in enumerate(list(df_eeducation.index)):
-	# 			START_DATAE = df_eeducation.loc[i, 'From']
-	# 			END_DATAE = df_eeducation.loc[i, 'To']
-	# 			COMPANY_NAME = df_eeducation.loc[i, 'Name']
-	# 			COMPANY_URL = df_eeducation.loc[i, 'Link']
-	# 			COMPANY_POS = df_eeducation.loc[i, 'Location']
-	# 			WORK_POSITION = df_eeducation.loc[i, 'Position']
-	# 			WORK_LEARNT= df_eeducation.loc[i, 'Learned']
-	# 			if WORK_LEARNT !="None":# not np.isnan(WORK_LEARNT):
-	# 				WORK_LEARNT = WORK_LEARNT.split("\n")
+	elif choose == "Education":
+	    #st.write("---")
+		# with st.expander(st.header("Experience"), expanded = False):
+		with st.container():
+			st.header(choose)
+			# START_DATAE = '01.01.2022'
+			# END_DATAE = "01.01.2023"
+			# COMPANY_NAME = "Company Name"
+			# COMPANY_URL = 'https://bitmetrix.ai'
+			# COMPANY_POS = "Moscow"
+			# WORK_POSITION = "Embedded system Engineer"
+			# COMPANY_IMAGE = None
+			# WORK_ID = 1	
+			for idx, i in enumerate(list(df_eeducation.index)):
+				START_DATAE = df_eeducation.loc[i, 'From']
+				END_DATAE = df_eeducation.loc[i, 'To']
+				COMPANY_NAME = df_eeducation.loc[i, 'Name']
+				COMPANY_URL = df_eeducation.loc[i, 'Link']
+				COMPANY_POS = df_eeducation.loc[i, 'Location']
+				WORK_POSITION = df_eeducation.loc[i, 'Position']
+				WORK_LEARNT= df_eeducation.loc[i, 'Learned']
+				if WORK_LEARNT !="None":# not np.isnan(WORK_LEARNT):
+					WORK_LEARNT = WORK_LEARNT.split("\n")
 
-	# 			FINAL_GRADE = df_eeducation.loc[i, 'Final grade']
-	# 			THESIS_TITLE = df_eeducation.loc[i, 'Thesis title']
-
-
-	# 			COMPANY_IMAGE = df_eeducation.loc[i, 'image']
-
-	# 			WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					print("COMPANY_IMAGE", COMPANY_IMAGE)
-	# 					if COMPANY_IMAGE!="None": 
-	# 						image_column, company_column, company_link, company_pos_column = st.columns((0.25, 1,0.1, 0.5))
-	# 						COMPANY_IMAGE = Image.open(f"images/{COMPANY_IMAGE}")
-	# 						with image_column:
-	# 							st.image(COMPANY_IMAGE, use_column_width=True)
-
-	# 					else:
-	# 						company_column, company_link, company_pos_column = st.columns((0.2,0.1, 0.5))
-
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					if COMPANY_NAME !="None":
-	# 						with company_column:
-	# 							st.subheader(f"{WORK_ID}.\t{COMPANY_NAME}")
-	# 							# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
-	# 					if COMPANY_URL !="None":
-	# 						with company_link:
-	# 							# st.markdown(f"[:link:]({COMPANY_URL})")
-	# 							st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["certificate"])}]({COMPANY_URL})""", unsafe_allow_html=True)
-
-	# 					if COMPANY_POS !="None":
-	# 						with company_pos_column:
-	# 							st.markdown(f"{COMPANY_POS}")
+				FINAL_GRADE = df_eeducation.loc[i, 'Final grade']
+				THESIS_TITLE = df_eeducation.loc[i, 'Thesis title']
 
 
-	# 					# margine, role_column, date_column = st.columns((0.1, 2,0.5))
-	# 					margine, role_column, _, date_column = st.columns((0.25, 1,0.1,0.5))
+				COMPANY_IMAGE = df_eeducation.loc[i, 'image']
 
-	# 					# 0.25, 1,0.1, 0.5
-	# 					with date_column:
-	# 						st.write(f"{START_DATAE}-{END_DATAE}")
-	# 					with role_column:
-	# 						st.markdown(f"{WORK_POSITION}")
+				WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						print("COMPANY_IMAGE", COMPANY_IMAGE)
+						if COMPANY_IMAGE!="None": 
+							image_column, company_column, company_link, company_pos_column = st.columns((0.25, 1,0.1, 0.5))
+							COMPANY_IMAGE = Image.open(f"images/{COMPANY_IMAGE}")
+							with image_column:
+								st.image(COMPANY_IMAGE, use_column_width=True)
+
+						else:
+							company_column, company_link, company_pos_column = st.columns((0.2,0.1, 0.5))
+
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						if COMPANY_NAME !="None":
+							with company_column:
+								st.subheader(f"{WORK_ID}.\t{COMPANY_NAME}")
+								# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
+						if COMPANY_URL !="None":
+							with company_link:
+								# st.markdown(f"[:link:]({COMPANY_URL})")
+								st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["certificate"])}]({COMPANY_URL})""", unsafe_allow_html=True)
+
+						if COMPANY_POS !="None":
+							with company_pos_column:
+								st.markdown(f"{COMPANY_POS}")
+
+
+						# margine, role_column, date_column = st.columns((0.1, 2,0.5))
+						margine, role_column, _, date_column = st.columns((0.25, 1,0.1,0.5))
+
+						# 0.25, 1,0.1, 0.5
+						with date_column:
+							st.write(f"{START_DATAE}-{END_DATAE}")
+						with role_column:
+							st.markdown(f"{WORK_POSITION}")
 							
-	# 						# points = ""
-	# 						# for p in WORK_LEARNT:
-	# 						# 	st.markdown(f"""- {p}""")
+							# points = ""
+							# for p in WORK_LEARNT:
+							# 	st.markdown(f"""- {p}""")
 
 
-	# 						if FINAL_GRADE !="None":
-	# 							st.markdown(f"""**Final grade:** {FINAL_GRADE}""")
-	# 						if THESIS_TITLE !="None":
-	# 							st.markdown(f"""**Thesis title:** {THESIS_TITLE}""")
+							if FINAL_GRADE !="None":
+								st.markdown(f"""**Final grade:** {FINAL_GRADE}""")
+							if THESIS_TITLE !="None":
+								st.markdown(f"""**Thesis title:** {THESIS_TITLE}""")
 
-	# 						SKILLS = df_eeducation.loc[i, 'Skills']
-	# 						# print("&&&&&&&&&", SKILLS)
-	# 						if SKILLS != "None":				
-	# 							SKILLS = SKILLS.split(";")
-	# 							skills_txt = ''
-	# 							for s in SKILLS:
-	# 								skills_txt += f'`{s}` '
-	# 							st.markdown(f"""
-	# 								**Course work:** {skills_txt}
-	# 							""")
-	# 					st.divider()
-	# elif choose in ["Publications"]:
-	#     #st.write("---")
-	# 	# with st.expander(st.header("Experience"), expanded = False):
-	# 	with st.container():
-	# 		st.header("Papers")
-	# 		# START_DATAE = '01.01.2022'
-	# 		# END_DATAE = "01.01.2023"
-	# 		# COMPANY_NAME = "Company Name"
-	# 		# COMPANY_URL = 'https://bitmetrix.ai'
-	# 		# COMPANY_POS = "Moscow"
-	# 		# WORK_POSITION = "Embedded system Engineer"
-	# 		# COMPANY_IMAGE = None
-	# 		# WORK_ID = 1	
-	# 		for idx, i in enumerate(list(df_papers.index)):
-	# 			PUBLICATION_DATAE = df_papers.loc[i, 'publicationDate']
-	# 			PUBLICATION_NAME = df_papers.loc[i, 'PublicationName']
-	# 			PUBLICATION_URL = df_papers.loc[i, 'PublicationLink']
-	# 			PUBLICATION_JOURNAL = df_papers.loc[i, 'JournalName']
-	# 			WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
+							SKILLS = df_eeducation.loc[i, 'Skills']
+							# print("&&&&&&&&&", SKILLS)
+							if SKILLS != "None":				
+								SKILLS = SKILLS.split(";")
+								skills_txt = ''
+								for s in SKILLS:
+									skills_txt += f'`{s}` '
+								st.markdown(f"""
+									**Course work:** {skills_txt}
+								""")
+						st.divider()
+	elif choose in ["Publications"]:
+	    #st.write("---")
+		# with st.expander(st.header("Experience"), expanded = False):
+		with st.container():
+			st.header("Papers")
+			# START_DATAE = '01.01.2022'
+			# END_DATAE = "01.01.2023"
+			# COMPANY_NAME = "Company Name"
+			# COMPANY_URL = 'https://bitmetrix.ai'
+			# COMPANY_POS = "Moscow"
+			# WORK_POSITION = "Embedded system Engineer"
+			# COMPANY_IMAGE = None
+			# WORK_ID = 1	
+			for idx, i in enumerate(list(df_papers.index)):
+				PUBLICATION_DATAE = df_papers.loc[i, 'publicationDate']
+				PUBLICATION_NAME = df_papers.loc[i, 'PublicationName']
+				PUBLICATION_URL = df_papers.loc[i, 'PublicationLink']
+				PUBLICATION_JOURNAL = df_papers.loc[i, 'JournalName']
+				WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
 
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					if PUBLICATION_NAME !="None":
-	# 						with publication_id:
-	# 							st.markdown(f"{WORK_ID}.")
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						if PUBLICATION_NAME !="None":
+							with publication_id:
+								st.markdown(f"{WORK_ID}.")
 
-	# 						with publication_name:
-	# 							st.markdown(f"{PUBLICATION_NAME}")
+							with publication_name:
+								st.markdown(f"{PUBLICATION_NAME}")
 
-	# 							# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
+								# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
 						
 
-	# 					if PUBLICATION_URL !="None":
-	# 						with publication_url:
-	# 							# st.markdown(f"[:link:]({PUBLICATION_URL})")
-	# 							# st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["paper"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
-	# 							st.markdown(f"""[:link:]({PUBLICATION_URL})""", unsafe_allow_html=True)
+						if PUBLICATION_URL !="None":
+							with publication_url:
+								# st.markdown(f"[:link:]({PUBLICATION_URL})")
+								# st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["paper"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+								st.markdown(f"""[:link:]({PUBLICATION_URL})""", unsafe_allow_html=True)
 
 						
-	# 					if PUBLICATION_DATAE !="None":
-	# 						with publication_date:
-	# 							st.markdown(f"{PUBLICATION_DATAE}")
-	# 					st.divider()
+						if PUBLICATION_DATAE !="None":
+							with publication_date:
+								st.markdown(f"{PUBLICATION_DATAE}")
+						st.divider()
 
 
-	# 		#------------------Conferences
-	# 	with st.container():
-	# 		st.header("Conferences")
+			#------------------Conferences
+		with st.container():
+			st.header("Conferences")
 
-	# 		# https://img.icons8.com/color/100/politician.png
-	# 		# START_DATAE = '01.01.2022'
-	# 		# END_DATAE = "01.01.2023"
-	# 		# COMPANY_NAME = "Company Name"
-	# 		# COMPANY_URL = 'https://bitmetrix.ai'
-	# 		# COMPANY_POS = "Moscow"
-	# 		# WORK_POSITION = "Embedded system Engineer"
-	# 		# COMPANY_IMAGE = None
-	# 		# WORK_ID = 1	
-	# 		for idx, i in enumerate(list(df_confs.index)):
-	# 			PUBLICATION_DATAE = df_confs.loc[i, 'publicationDate']
-	# 			PUBLICATION_NAME = df_confs.loc[i, 'PublicationName']
-	# 			PUBLICATION_URL = df_confs.loc[i, 'PublicationLink']
-	# 			PUBLICATION_JOURNAL = df_confs.loc[i, 'JournalName']
-	# 			WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
+			# https://img.icons8.com/color/100/politician.png
+			# START_DATAE = '01.01.2022'
+			# END_DATAE = "01.01.2023"
+			# COMPANY_NAME = "Company Name"
+			# COMPANY_URL = 'https://bitmetrix.ai'
+			# COMPANY_POS = "Moscow"
+			# WORK_POSITION = "Embedded system Engineer"
+			# COMPANY_IMAGE = None
+			# WORK_ID = 1	
+			for idx, i in enumerate(list(df_confs.index)):
+				PUBLICATION_DATAE = df_confs.loc[i, 'publicationDate']
+				PUBLICATION_NAME = df_confs.loc[i, 'PublicationName']
+				PUBLICATION_URL = df_confs.loc[i, 'PublicationLink']
+				PUBLICATION_JOURNAL = df_confs.loc[i, 'JournalName']
+				WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
 
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					if PUBLICATION_NAME !="None":
-	# 						with publication_id:
-	# 							st.markdown(f"{WORK_ID}.")
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						if PUBLICATION_NAME !="None":
+							with publication_id:
+								st.markdown(f"{WORK_ID}.")
 
-	# 						with publication_name:
-	# 							st.markdown(f"{PUBLICATION_NAME}")
+							with publication_name:
+								st.markdown(f"{PUBLICATION_NAME}")
 						
 
-	# 					if PUBLICATION_URL !="None":
-	# 						with publication_url:
-	# 							# st.markdown(f"[:link:]({PUBLICATION_URL})")
-	# 							st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["paper"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+						if PUBLICATION_URL !="None":
+							with publication_url:
+								# st.markdown(f"[:link:]({PUBLICATION_URL})")
+								st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["paper"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
 						
-	# 					if PUBLICATION_DATAE !="None":
-	# 						with publication_date:
-	# 							st.markdown(f"{PUBLICATION_DATAE}")
-	# 					st.divider()
+						if PUBLICATION_DATAE !="None":
+							with publication_date:
+								st.markdown(f"{PUBLICATION_DATAE}")
+						st.divider()
 
-	# elif choose in ["Papers"]:
-	#     #st.write("---")
-	# 	# with st.expander(st.header("Experience"), expanded = False):
-	# 	with st.container():
-	# 		st.header(choose)
-	# 		# START_DATAE = '01.01.2022'
-	# 		# END_DATAE = "01.01.2023"
-	# 		# COMPANY_NAME = "Company Name"
-	# 		# COMPANY_URL = 'https://bitmetrix.ai'
-	# 		# COMPANY_POS = "Moscow"
-	# 		# WORK_POSITION = "Embedded system Engineer"
-	# 		# COMPANY_IMAGE = None
-	# 		# WORK_ID = 1	
-	# 		for idx, i in enumerate(list(df_papers.index)):
-	# 			PUBLICATION_DATAE = df_papers.loc[i, 'publicationDate']
-	# 			PUBLICATION_NAME = df_papers.loc[i, 'PublicationName']
-	# 			PUBLICATION_URL = df_papers.loc[i, 'PublicationLink']
-	# 			PUBLICATION_JOURNAL = df_papers.loc[i, 'JournalName']
-	# 			WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
+	elif choose in ["Papers"]:
+	    #st.write("---")
+		# with st.expander(st.header("Experience"), expanded = False):
+		with st.container():
+			st.header(choose)
+			# START_DATAE = '01.01.2022'
+			# END_DATAE = "01.01.2023"
+			# COMPANY_NAME = "Company Name"
+			# COMPANY_URL = 'https://bitmetrix.ai'
+			# COMPANY_POS = "Moscow"
+			# WORK_POSITION = "Embedded system Engineer"
+			# COMPANY_IMAGE = None
+			# WORK_ID = 1	
+			for idx, i in enumerate(list(df_papers.index)):
+				PUBLICATION_DATAE = df_papers.loc[i, 'publicationDate']
+				PUBLICATION_NAME = df_papers.loc[i, 'PublicationName']
+				PUBLICATION_URL = df_papers.loc[i, 'PublicationLink']
+				PUBLICATION_JOURNAL = df_papers.loc[i, 'JournalName']
+				WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
 
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					if PUBLICATION_NAME !="None":
-	# 						with publication_id:
-	# 							st.markdown(f"{WORK_ID}.")
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						if PUBLICATION_NAME !="None":
+							with publication_id:
+								st.markdown(f"{WORK_ID}.")
 
-	# 						with publication_name:
-	# 							st.markdown(f"{PUBLICATION_NAME}")
+							with publication_name:
+								st.markdown(f"{PUBLICATION_NAME}")
 
-	# 							# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
-						
-
-	# 					if PUBLICATION_URL !="None":
-	# 						with publication_url:
-	# 							# st.markdown(f"[:link:]({PUBLICATION_URL})")
-	# 							# st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["paper"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
-	# 							st.markdown(f"""[:link:]({PUBLICATION_URL})""", unsafe_allow_html=True)
-
-						
-	# 					if PUBLICATION_DATAE !="None":
-	# 						with publication_date:
-	# 							st.markdown(f"{PUBLICATION_DATAE}")
-
-
-	# 					st.markdown("""
-	# 					<style>
-	# 					.block-container {
-	# 					padding-top: 0rem;
-	# 					padding-bottom: 0rem;
-	# 					padding-left: 5rem;
-	# 					padding-right: 5rem;
-	# 					}
-	# 					</style>
-	# 					""", unsafe_allow_html=True)
-
-	# 					st.divider()
-
-	# elif choose == "Conferences":
-	#     #st.write("---")
-	# 	# with st.expander(st.header("Experience"), expanded = False):
-	# 	with st.container():
-	# 		st.header(choose)
-
-	# 		# https://img.icons8.com/color/100/politician.png
-	# 		# START_DATAE = '01.01.2022'
-	# 		# END_DATAE = "01.01.2023"
-	# 		# COMPANY_NAME = "Company Name"
-	# 		# COMPANY_URL = 'https://bitmetrix.ai'
-	# 		# COMPANY_POS = "Moscow"
-	# 		# WORK_POSITION = "Embedded system Engineer"
-	# 		# COMPANY_IMAGE = None
-	# 		# WORK_ID = 1	
-	# 		for idx, i in enumerate(list(df_confs.index)):
-	# 			PUBLICATION_DATAE = df_confs.loc[i, 'publicationDate']
-	# 			PUBLICATION_NAME = df_confs.loc[i, 'PublicationName']
-	# 			PUBLICATION_URL = df_confs.loc[i, 'PublicationLink']
-	# 			PUBLICATION_JOURNAL = df_confs.loc[i, 'JournalName']
-	# 			WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
-
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					if PUBLICATION_NAME !="None":
-	# 						with publication_id:
-	# 							st.markdown(f"{WORK_ID}.")
-
-	# 						with publication_name:
-	# 							st.markdown(f"{PUBLICATION_NAME}")
+								# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
 						
 
-	# 					if PUBLICATION_URL !="None":
-	# 						with publication_url:
-	# 							# st.markdown(f"[:link:]({PUBLICATION_URL})")
-	# 							st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["paper"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+						if PUBLICATION_URL !="None":
+							with publication_url:
+								# st.markdown(f"[:link:]({PUBLICATION_URL})")
+								# st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["paper"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+								st.markdown(f"""[:link:]({PUBLICATION_URL})""", unsafe_allow_html=True)
+
 						
-	# 					if PUBLICATION_DATAE !="None":
-	# 						with publication_date:
-	# 							st.markdown(f"{PUBLICATION_DATAE}")
+						if PUBLICATION_DATAE !="None":
+							with publication_date:
+								st.markdown(f"{PUBLICATION_DATAE}")
 
 
-	# 					st.markdown("""
-	# 					<style>
-	# 					.block-container {
-	# 					padding-top: 0rem;
-	# 					padding-bottom: 0rem;
-	# 					padding-left: 5rem;
-	# 					padding-right: 5rem;
-	# 					}
-	# 					</style>
-	# 					""", unsafe_allow_html=True)
+						st.markdown("""
+						<style>
+						.block-container {
+						padding-top: 0rem;
+						padding-bottom: 0rem;
+						padding-left: 5rem;
+						padding-right: 5rem;
+						}
+						</style>
+						""", unsafe_allow_html=True)
 
-	# 					st.divider()
+						st.divider()
 
-	# 					# hide = """
-	# 					# <style>
-	# 					# ul.streamlit-expander {
-	# 					#     border: 0 !important;
-	# 					# </style>
-	# 					# """
+	elif choose == "Conferences":
+	    #st.write("---")
+		# with st.expander(st.header("Experience"), expanded = False):
+		with st.container():
+			st.header(choose)
 
-	# 					# st.markdown(hide, unsafe_allow_html=True)
+			# https://img.icons8.com/color/100/politician.png
+			# START_DATAE = '01.01.2022'
+			# END_DATAE = "01.01.2023"
+			# COMPANY_NAME = "Company Name"
+			# COMPANY_URL = 'https://bitmetrix.ai'
+			# COMPANY_POS = "Moscow"
+			# WORK_POSITION = "Embedded system Engineer"
+			# COMPANY_IMAGE = None
+			# WORK_ID = 1	
+			for idx, i in enumerate(list(df_confs.index)):
+				PUBLICATION_DATAE = df_confs.loc[i, 'publicationDate']
+				PUBLICATION_NAME = df_confs.loc[i, 'PublicationName']
+				PUBLICATION_URL = df_confs.loc[i, 'PublicationLink']
+				PUBLICATION_JOURNAL = df_confs.loc[i, 'JournalName']
+				WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
+
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						if PUBLICATION_NAME !="None":
+							with publication_id:
+								st.markdown(f"{WORK_ID}.")
+
+							with publication_name:
+								st.markdown(f"{PUBLICATION_NAME}")
+						
+
+						if PUBLICATION_URL !="None":
+							with publication_url:
+								# st.markdown(f"[:link:]({PUBLICATION_URL})")
+								st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["paper"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+						
+						if PUBLICATION_DATAE !="None":
+							with publication_date:
+								st.markdown(f"{PUBLICATION_DATAE}")
 
 
-	# 	# st.markdown(
-	# 	#     """<style>
-	# 	#                     .streamlit-expander {
-	# 	#                         border: none;
-	# 	#                         box-shadow: none;
-	# 	#                     }
+						st.markdown("""
+						<style>
+						.block-container {
+						padding-top: 0rem;
+						padding-bottom: 0rem;
+						padding-left: 5rem;
+						padding-right: 5rem;
+						}
+						</style>
+						""", unsafe_allow_html=True)
+
+						st.divider()
+
+						# hide = """
+						# <style>
+						# ul.streamlit-expander {
+						#     border: 0 !important;
+						# </style>
+						# """
+
+						# st.markdown(hide, unsafe_allow_html=True)
+
+
+		# st.markdown(
+		#     """<style>
+		#                     .streamlit-expander {
+		#                         border: none;
+		#                         box-shadow: none;
+		#                     }
 		            
-	# 	#                     .streamlit-expanderHeader {
-	# 	#                         border-bottom: none;
-	# 	#                     }
+		#                     .streamlit-expanderHeader {
+		#                         border-bottom: none;
+		#                     }
 		            
-	# 	#                     .streamlit-expanderClosed .streamlit-expanderHeader,
-	# 	#                     .streamlit-expanderClosed .streamlit-expanderContent {
-	# 	#                         border: none;
-	# 	#                     }
-	# 	#                 </style>""",
-	# 	#     unsafe_allow_html=True
-	# 	# )
-	# elif choose == "Rewards":
-	#     #st.write("---")
-	# 	# with st.expander(st.header("Experience"), expanded = False):
-	# 	with st.container():
-	# 		st.header(choose)
-	# 		# START_DATAE = '01.01.2022'
-	# 		# END_DATAE = "01.01.2023"
-	# 		# COMPANY_NAME = "Company Name"
-	# 		# COMPANY_URL = 'https://bitmetrix.ai'
-	# 		# COMPANY_POS = "Moscow"
-	# 		# WORK_POSITION = "Embedded system Engineer"
-	# 		# COMPANY_IMAGE = None
-	# 		# WORK_ID = 1	
-	# 		for idx, i in enumerate(list(df_rewards.index)):
+		#                     .streamlit-expanderClosed .streamlit-expanderHeader,
+		#                     .streamlit-expanderClosed .streamlit-expanderContent {
+		#                         border: none;
+		#                     }
+		#                 </style>""",
+		#     unsafe_allow_html=True
+		# )
+	elif choose == "Rewards":
+	    #st.write("---")
+		# with st.expander(st.header("Experience"), expanded = False):
+		with st.container():
+			st.header(choose)
+			# START_DATAE = '01.01.2022'
+			# END_DATAE = "01.01.2023"
+			# COMPANY_NAME = "Company Name"
+			# COMPANY_URL = 'https://bitmetrix.ai'
+			# COMPANY_POS = "Moscow"
+			# WORK_POSITION = "Embedded system Engineer"
+			# COMPANY_IMAGE = None
+			# WORK_ID = 1	
+			for idx, i in enumerate(list(df_rewards.index)):
 
-	# 			PUBLICATION_DATAE = df_rewards.loc[i, 'RewardDate']
-	# 			PUBLICATION_NAME = df_rewards.loc[i, 'RewardName']
-	# 			PUBLICATION_URL = df_rewards.loc[i, 'RewardLink']
-	# 			PUBLICATION_JOURNAL = df_rewards.loc[i, 'OrganName']
-	# 			WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					publication_name, publication_state, publication_url, publication_date = st.columns((2,0.1,0.1,0.5))
+				PUBLICATION_DATAE = df_rewards.loc[i, 'RewardDate']
+				PUBLICATION_NAME = df_rewards.loc[i, 'RewardName']
+				PUBLICATION_URL = df_rewards.loc[i, 'RewardLink']
+				PUBLICATION_JOURNAL = df_rewards.loc[i, 'OrganName']
+				WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						publication_name, publication_state, publication_url, publication_date = st.columns((2,0.1,0.1,0.5))
 
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					if PUBLICATION_NAME !="None":
-	# 						with publication_name:
-	# 							st.markdown(f"""{WORK_ID}.\t{PUBLICATION_NAME}
-	# 								""")
-	# 							# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						if PUBLICATION_NAME !="None":
+							with publication_name:
+								st.markdown(f"""{WORK_ID}.\t{PUBLICATION_NAME}
+									""")
+								# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
 						
 
 
-	# 					if PUBLICATION_URL !="None":
-	# 						with publication_url:
-	# 							# st.markdown(f"[:link:]({PUBLICATION_URL})")
-	# 							st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["certificate"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+						if PUBLICATION_URL !="None":
+							with publication_url:
+								# st.markdown(f"[:link:]({PUBLICATION_URL})")
+								st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["certificate"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
 
 						
-	# 					if PUBLICATION_DATAE !="None":
-	# 						with publication_date:
-	# 							st.markdown(f"{PUBLICATION_DATAE}")
+						if PUBLICATION_DATAE !="None":
+							with publication_date:
+								st.markdown(f"{PUBLICATION_DATAE}")
 						
 
-	# 					_,organ_details, _ = st.columns((0.1,2.2,0.5))
-	# 					if PUBLICATION_JOURNAL !="None":
-	# 						with organ_details:
-	# 							st.markdown(f"    {PUBLICATION_JOURNAL}")
+						_,organ_details, _ = st.columns((0.1,2.2,0.5))
+						if PUBLICATION_JOURNAL !="None":
+							with organ_details:
+								st.markdown(f"    {PUBLICATION_JOURNAL}")
 
-	# 					st.markdown("""
-	# 					<style>
-	# 					.block-container {
-	# 					padding-top: 0rem;
-	# 					padding-bottom: 0rem;
-	# 					padding-left: 5rem;
-	# 					padding-right: 5rem;
-	# 					}
-	# 					</style>
-	# 					""", unsafe_allow_html=True)
+						st.markdown("""
+						<style>
+						.block-container {
+						padding-top: 0rem;
+						padding-bottom: 0rem;
+						padding-left: 5rem;
+						padding-right: 5rem;
+						}
+						</style>
+						""", unsafe_allow_html=True)
 
-	# 					st.divider()
-	# elif choose == "Projects":
-	#     #st.write("---")
-	# 	# with st.expander(st.header("Experience"), expanded = False):
-	# 	with st.container():
-	# 		st.header(choose)
-	# 		# START_DATAE = '01.01.2022'
-	# 		# END_DATAE = "01.01.2023"
-	# 		# COMPANY_NAME = "Company Name"
-	# 		# COMPANY_URL = 'https://bitmetrix.ai'
-	# 		# COMPANY_POS = "Moscow"
-	# 		# WORK_POSITION = "Embedded system Engineer"
-	# 		# COMPANY_IMAGE = None
-	# 		# WORK_ID = 1	
-	# 		for idx, i in enumerate(list(df_projects.index)):
+						st.divider()
+	elif choose == "Projects":
+	    #st.write("---")
+		# with st.expander(st.header("Experience"), expanded = False):
+		with st.container():
+			st.header(choose)
+			# START_DATAE = '01.01.2022'
+			# END_DATAE = "01.01.2023"
+			# COMPANY_NAME = "Company Name"
+			# COMPANY_URL = 'https://bitmetrix.ai'
+			# COMPANY_POS = "Moscow"
+			# WORK_POSITION = "Embedded system Engineer"
+			# COMPANY_IMAGE = None
+			# WORK_ID = 1	
+			for idx, i in enumerate(list(df_projects.index)):
 
-	# 			PUBLICATION_DATAE = df_projects.loc[i, 'ProjectDate']
-	# 			PUBLICATION_NAME = df_projects.loc[i, 'ProjectTitle']
-	# 			PUBLICATION_URL = df_projects.loc[i, 'ProjectLink']
-	# 			# PUBLICATION_JOURNAL = df_projects.loc[i, 'OrganName']
-	# 			WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
+				PUBLICATION_DATAE = df_projects.loc[i, 'ProjectDate']
+				PUBLICATION_NAME = df_projects.loc[i, 'ProjectTitle']
+				PUBLICATION_URL = df_projects.loc[i, 'ProjectLink']
+				# PUBLICATION_JOURNAL = df_projects.loc[i, 'OrganName']
+				WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						publication_id, publication_name, publication_state, publication_url, publication_date = st.columns((0.1,1.9,0.1,0.1,0.3))
 
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					if PUBLICATION_NAME !="None":
-	# 						with publication_id:
-	# 							st.markdown(f"{WORK_ID}.")
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						if PUBLICATION_NAME !="None":
+							with publication_id:
+								st.markdown(f"{WORK_ID}.")
 
-	# 						with publication_name:
-	# 							st.markdown(f"{PUBLICATION_NAME}")
+							with publication_name:
+								st.markdown(f"{PUBLICATION_NAME}")
 						
 
-	# 					if PUBLICATION_URL !="None":
-	# 						with publication_url:
-	# 							# st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
-	# 							st.markdown(f"""[:link:]({PUBLICATION_URL})""", unsafe_allow_html=True)
+						if PUBLICATION_URL !="None":
+							with publication_url:
+								# st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+								st.markdown(f"""[:link:]({PUBLICATION_URL})""", unsafe_allow_html=True)
 
-	# 							# https://img.icons8.com/ios-filled/100/ff8c00/youtube-play.png
-	# 							# st.markdown(
-	# 							# 	get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"]),
-	# 							# 	unsafe_allow_html=True
-	# 							# )
+								# https://img.icons8.com/ios-filled/100/ff8c00/youtube-play.png
+								# st.markdown(
+								# 	get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"]),
+								# 	unsafe_allow_html=True
+								# )
 
-	# 							# st.components.v1.html(
-	# 							# 	"""
-	# 							# 		<!-- awesome.html -->
-	# 							# 		<script src="https://kit.fontawesome.com/2c74303849.js" crossorigin="anonymous"></script>
-	# 							# 		<i class="fa-solid fa-paw"></i>
-	# 							# 	"""
-	# 							# 	)
+								# st.components.v1.html(
+								# 	"""
+								# 		<!-- awesome.html -->
+								# 		<script src="https://kit.fontawesome.com/2c74303849.js" crossorigin="anonymous"></script>
+								# 		<i class="fa-solid fa-paw"></i>
+								# 	"""
+								# 	)
 
-	# 					if PUBLICATION_DATAE !="None":
-	# 						with publication_date:
-	# 							st.markdown(f"{PUBLICATION_DATAE}")
+						if PUBLICATION_DATAE !="None":
+							with publication_date:
+								st.markdown(f"{PUBLICATION_DATAE}")
 
-	# 					_,pro_details, pro_media = st.columns((0.1, 2.2,0.5))
-	# 					columns_list = list(df_projects.columns)
-	# 					with pro_details:
-	# 						for c in columns_list:
-	# 							if c not in ["ProjectDate", "ProjectTitle", "ProjectLink", "media"]:
-	# 								# st.markdown(f"- **{c}:** {df_projects.loc[i, c]}")
-	# 								if df_projects.loc[i, c]!="None":										
-	# 									st.markdown(f"""\t- **{c}** {df_projects.loc[i, c]}""")
-	# 					with pro_media:
-	# 						if df_projects.loc[i, "media"]!="None":
-	# 							if 'PNG' in df_projects.loc[i, "media"] or 'png' in df_projects.loc[i, "media"] or 'jpg' in df_projects.loc[i, "media"] or 'JPG' in df_projects.loc[i, "media"]:#.capitalize():
-	# 								xxx = Image.open(df_projects.loc[i, "media"])
-	# 								st.image(xxx, caption='')
-	# 							elif 'mp4' in df_projects.loc[i, "media"]:
-	# 								video_file = open(df_projects.loc[i, "media"], 'rb')
-	# 								video_bytes = video_file.read()
-	# 								st.video(video_bytes)
-
-
-	# 							# elif if '' in df_projects.loc[i, "media"].capitalize():		
+						_,pro_details, pro_media = st.columns((0.1, 2.2,0.5))
+						columns_list = list(df_projects.columns)
+						with pro_details:
+							for c in columns_list:
+								if c not in ["ProjectDate", "ProjectTitle", "ProjectLink", "media"]:
+									# st.markdown(f"- **{c}:** {df_projects.loc[i, c]}")
+									if df_projects.loc[i, c]!="None":										
+										st.markdown(f"""\t- **{c}** {df_projects.loc[i, c]}""")
+						with pro_media:
+							if df_projects.loc[i, "media"]!="None":
+								if 'PNG' in df_projects.loc[i, "media"] or 'png' in df_projects.loc[i, "media"] or 'jpg' in df_projects.loc[i, "media"] or 'JPG' in df_projects.loc[i, "media"]:#.capitalize():
+									xxx = Image.open(df_projects.loc[i, "media"])
+									st.image(xxx, caption='')
+								elif 'mp4' in df_projects.loc[i, "media"]:
+									video_file = open(df_projects.loc[i, "media"], 'rb')
+									video_bytes = video_file.read()
+									st.video(video_bytes)
 
 
+								# elif if '' in df_projects.loc[i, "media"].capitalize():		
 
-	# 					st.markdown("""
-	# 					<style>
-	# 					.block-container {
-	# 					padding-top: 0rem;
-	# 					padding-bottom: 0rem;
-	# 					padding-left: 5rem;
-	# 					padding-right: 5rem;
-	# 					}
-	# 					</style>
-	# 					""", unsafe_allow_html=True)
 
-	# 					st.divider()
 
-	# elif choose == "Skills":
-	#     #st.write("---")
-	# 	# with st.expander(st.header("Experience"), expanded = False):
-	# 	with st.container():
-	# 		st.header(choose)
-	# 		# START_DATAE = '01.01.2022'
-	# 		# END_DATAE = "01.01.2023"
-	# 		# COMPANY_NAME = "Company Name"
-	# 		# COMPANY_URL = 'https://bitmetrix.ai'
-	# 		# COMPANY_POS = "Moscow"
-	# 		# WORK_POSITION = "Embedded system Engineer"
-	# 		# COMPANY_IMAGE = None
-	# 		# WORK_ID = 1	
-	# 		for idx, i in enumerate(list(df_skills.index)):
+						st.markdown("""
+						<style>
+						.block-container {
+						padding-top: 0rem;
+						padding-bottom: 0rem;
+						padding-left: 5rem;
+						padding-right: 5rem;
+						}
+						</style>
+						""", unsafe_allow_html=True)
 
-	# 			# PUBLICATION_DATAE = df_skills.loc[i, 'ProjectDate']
-	# 			# PUBLICATION_NAME = df_skills.loc[i, 'ProjectTitle']
-	# 			# PUBLICATION_URL = df_skills.loc[i, 'ProjectLink']
-	# 			# PUBLICATION_JOURNAL = df_projects.loc[i, 'OrganName']
-	# 			# WORK_ID = idx+1
-	# 			if 1:
-	# 			# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
-	# 				# st.header("Experience", divider=True)
-	# 				with st.container():
-	# 					publication_name, publication_state, publication_url, publication_date = st.columns((2,0.1,0.1,0.5))
+						st.divider()
 
-	# 					# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
-	# 					# if PUBLICATION_NAME !="None":
-	# 					# 	with publication_name:
-	# 					# 		st.markdown(f"#### {WORK_ID}.\t{PUBLICATION_NAME}")
-	# 					# 		# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
+	elif choose == "Skills":
+	    #st.write("---")
+		# with st.expander(st.header("Experience"), expanded = False):
+		with st.container():
+			st.header(choose)
+			# START_DATAE = '01.01.2022'
+			# END_DATAE = "01.01.2023"
+			# COMPANY_NAME = "Company Name"
+			# COMPANY_URL = 'https://bitmetrix.ai'
+			# COMPANY_POS = "Moscow"
+			# WORK_POSITION = "Embedded system Engineer"
+			# COMPANY_IMAGE = None
+			# WORK_ID = 1	
+			for idx, i in enumerate(list(df_skills.index)):
+
+				# PUBLICATION_DATAE = df_skills.loc[i, 'ProjectDate']
+				# PUBLICATION_NAME = df_skills.loc[i, 'ProjectTitle']
+				# PUBLICATION_URL = df_skills.loc[i, 'ProjectLink']
+				# PUBLICATION_JOURNAL = df_projects.loc[i, 'OrganName']
+				# WORK_ID = idx+1
+				if 1:
+				# with st.expander(f"{WORK_POSITION} at {COMPANY_NAME}", expanded = True):
+					# st.header("Experience", divider=True)
+					with st.container():
+						publication_name, publication_state, publication_url, publication_date = st.columns((2,0.1,0.1,0.5))
+
+						# image_column, company_column, company_pos_column, text_column, date_column = st.columns((0.5,5,0.5))
+						# if PUBLICATION_NAME !="None":
+						# 	with publication_name:
+						# 		st.markdown(f"#### {WORK_ID}.\t{PUBLICATION_NAME}")
+						# 		# st.markdown(f"{WORK_ID}\t{COMPANY_NAME}[:link:]({COMPANY_URL})")
 						
 
-	# 					# if PUBLICATION_URL !="None":
-	# 					# 	with publication_url:
-	# 					# 		st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
-	# 							# https://img.icons8.com/ios-filled/100/ff8c00/youtube-play.png
-	# 							# st.markdown(
-	# 							# 	get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"]),
-	# 							# 	unsafe_allow_html=True
-	# 							# )
+						# if PUBLICATION_URL !="None":
+						# 	with publication_url:
+						# 		st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+								# https://img.icons8.com/ios-filled/100/ff8c00/youtube-play.png
+								# st.markdown(
+								# 	get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"]),
+								# 	unsafe_allow_html=True
+								# )
 
-	# 							# st.components.v1.html(
-	# 							# 	"""
-	# 							# 		<!-- awesome.html -->
-	# 							# 		<script src="https://kit.fontawesome.com/2c74303849.js" crossorigin="anonymous"></script>
-	# 							# 		<i class="fa-solid fa-paw"></i>
-	# 							# 	"""
-	# 							# 	)
+								# st.components.v1.html(
+								# 	"""
+								# 		<!-- awesome.html -->
+								# 		<script src="https://kit.fontawesome.com/2c74303849.js" crossorigin="anonymous"></script>
+								# 		<i class="fa-solid fa-paw"></i>
+								# 	"""
+								# 	)
 
-	# 					# if PUBLICATION_DATAE !="None":
-	# 					# 	with publication_date:
-	# 					# 		st.markdown(f"{PUBLICATION_DATAE}")
+						# if PUBLICATION_DATAE !="None":
+						# 	with publication_date:
+						# 		st.markdown(f"{PUBLICATION_DATAE}")
 
 
-	# 					columns_list = list(df_skills.columns)
-	# 					for c in columns_list:
-	# 						# if c not in ["ProjectDate", "ProjectTitle", "ProjectLink"]:
-	# 							# st.markdown(f"- **{c}:** {df_projects.loc[i, c]}")
+						columns_list = list(df_skills.columns)
+						for c in columns_list:
+							# if c not in ["ProjectDate", "ProjectTitle", "ProjectLink"]:
+								# st.markdown(f"- **{c}:** {df_projects.loc[i, c]}")
 							
-	# 						if df_skills.loc[i, c]!="None":
-	# 							if df_skills.loc[i, c].capitalize()=="LANGUAGES":
-	# 								st.markdown(f"""\t- **{c} {get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"])}** {df_skills.loc[i, c]}""", unsafe_allow_html=True)
-	# 							else:
-	# 								st.markdown(f"""\t- **{c}** {df_skills.loc[i, c]}""")
+							if df_skills.loc[i, c]!="None":
+								if df_skills.loc[i, c].capitalize()=="LANGUAGES":
+									st.markdown(f"""\t- **{c} {get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["github"])}** {df_skills.loc[i, c]}""", unsafe_allow_html=True)
+								else:
+									st.markdown(f"""\t- **{c}** {df_skills.loc[i, c]}""")
 
 
 
-	# 					# st.markdown("""
-	# 					# <style>
-	# 					# .block-container {
-	# 					# padding-top: 0rem;
-	# 					# padding-bottom: 0rem;
-	# 					# padding-left: 5rem;
-	# 					# padding-right: 5rem;
-	# 					# }
-	# 					# </style>
-	# 					# """, unsafe_allow_html=True)
+						# st.markdown("""
+						# <style>
+						# .block-container {
+						# padding-top: 0rem;
+						# padding-bottom: 0rem;
+						# padding-left: 5rem;
+						# padding-right: 5rem;
+						# }
+						# </style>
+						# """, unsafe_allow_html=True)
 
-	# 					st.divider()
-
-
-	# elif choose == "Contact":
-	# # Create section for Contact
-	#     #st.write("---")
-	#     st.header("Contact")
-	#     with st.container():
-	#         text_column, mid, image_column = st.columns((1.3,0.1,0.3))
-	#         with text_column:
-	#             st.write(f"Use this {email_url} or contact me from below.")
-	#             #with st.form(key='columns_in_form2',clear_on_submit=True): #set clear_on_submit=True so that the form will be reset/cleared once it's submitted
-	#                 #st.write('Please help us improve!')
-	#                 #Name=st.text_input(label='Your Name',
-	#                                     #max_chars=100, type="default") #Collect user feedback
-	#                 #Email=st.text_input(label='Your Email', 
-	#                                     #max_chars=100,type="default") #Collect user feedback
-	#                 #Message=st.text_input(label='Your Message',
-	#                                         #max_chars=500, type="default") #Collect user feedback
-	#                 #submitted = st.form_submit_button('Submit')
-	#                 #if submitted:
-	#                     #st.write('Thanks for your contacting us. We will respond to your questions or inquiries as soon as possible!')
-	#             def create_database_and_table():
-	#                 conn = sqlite3.connect('contact_form.db')
-	#                 c = conn.cursor()
-	#                 c.execute('''CREATE TABLE IF NOT EXISTS contacts
-	#                             (name TEXT, email TEXT, message TEXT)''')
-	#                 conn.commit()
-	#                 conn.close()
-	#             create_database_and_table()
-
-	#             st.subheader("Contact Form")
-	#             if "name" not in st.session_state:
-	#                 st.session_state["name"] = ""
-	#             if "email" not in st.session_state:
-	#                 st.session_state["email"] = ""
-	#             if "message" not in st.session_state:
-	#                 st.session_state["message"] = ""
-	#             st.session_state["name"] = st.text_input("Name", st.session_state["name"])
-	#             st.session_state["email"] = st.text_input("Email", st.session_state["email"])
-	#             st.session_state["message"] = st.text_area("Message", st.session_state["message"])
+						st.divider()
 
 
-	#             column1, column2= st.columns([1,5])
-	#             if column1.button("Submit"):
-	#                 conn = sqlite3.connect('contact_form.db')
-	#                 c = conn.cursor()
-	#                 c.execute("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)",
-	#                         (st.session_state["name"], st.session_state["email"], st.session_state["message"]))
-	#                 conn.commit()
-	#                 conn.close()
-	#                 st.success("Your message has been sent!")
-	#                 # Clear the input fields
-	#                 st.session_state["name"] = ""
-	#                 st.session_state["email"] = ""
-	#                 st.session_state["message"] = ""
-	#             def fetch_all_contacts():
-	#                 conn = sqlite3.connect('contact_form.db')
-	#                 c = conn.cursor()
-	#                 c.execute("SELECT * FROM contacts")
-	#                 rows = c.fetchall()
-	#                 conn.close()
-	#                 return rows
+	elif choose == "Contact":
+	# Create section for Contact
+	    #st.write("---")
+	    st.header("Contact")
+	    with st.container():
+	        text_column, mid, image_column = st.columns((1.3,0.1,0.3))
+	        with text_column:
+	            st.write(f"Use this {email_url} or contact me from below.")
+	            #with st.form(key='columns_in_form2',clear_on_submit=True): #set clear_on_submit=True so that the form will be reset/cleared once it's submitted
+	                #st.write('Please help us improve!')
+	                #Name=st.text_input(label='Your Name',
+	                                    #max_chars=100, type="default") #Collect user feedback
+	                #Email=st.text_input(label='Your Email', 
+	                                    #max_chars=100,type="default") #Collect user feedback
+	                #Message=st.text_input(label='Your Message',
+	                                        #max_chars=500, type="default") #Collect user feedback
+	                #submitted = st.form_submit_button('Submit')
+	                #if submitted:
+	                    #st.write('Thanks for your contacting us. We will respond to your questions or inquiries as soon as possible!')
+	            def create_database_and_table():
+	                conn = sqlite3.connect('contact_form.db')
+	                c = conn.cursor()
+	                c.execute('''CREATE TABLE IF NOT EXISTS contacts
+	                            (name TEXT, email TEXT, message TEXT)''')
+	                conn.commit()
+	                conn.close()
+	            create_database_and_table()
+
+	            st.subheader("Contact Form")
+	            if "name" not in st.session_state:
+	                st.session_state["name"] = ""
+	            if "email" not in st.session_state:
+	                st.session_state["email"] = ""
+	            if "message" not in st.session_state:
+	                st.session_state["message"] = ""
+	            st.session_state["name"] = st.text_input("Name", st.session_state["name"])
+	            st.session_state["email"] = st.text_input("Email", st.session_state["email"])
+	            st.session_state["message"] = st.text_area("Message", st.session_state["message"])
+
+
+	            column1, column2= st.columns([1,5])
+	            if column1.button("Submit"):
+	                conn = sqlite3.connect('contact_form.db')
+	                c = conn.cursor()
+	                c.execute("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)",
+	                        (st.session_state["name"], st.session_state["email"], st.session_state["message"]))
+	                conn.commit()
+	                conn.close()
+	                st.success("Your message has been sent!")
+	                # Clear the input fields
+	                st.session_state["name"] = ""
+	                st.session_state["email"] = ""
+	                st.session_state["message"] = ""
+	            def fetch_all_contacts():
+	                conn = sqlite3.connect('contact_form.db')
+	                c = conn.cursor()
+	                c.execute("SELECT * FROM contacts")
+	                rows = c.fetchall()
+	                conn.close()
+	                return rows
 	            
-	#             if "show_contacts" not in st.session_state:
-	#                 st.session_state["show_contacts"] = False
-	#             if column2.button("View Submitted Forms"):
-	#                 st.session_state["show_contacts"] = not st.session_state["show_contacts"]
+	            if "show_contacts" not in st.session_state:
+	                st.session_state["show_contacts"] = False
+	            if column2.button("View Submitted Forms"):
+	                st.session_state["show_contacts"] = not st.session_state["show_contacts"]
 	            
-	#             if st.session_state["show_contacts"]:
-	#                 all_contacts = fetch_all_contacts()
-	#                 if len(all_contacts) > 0:
-	#                     table_header = "| Name | Email | Message |\n| --- | --- | --- |\n"
-	#                     table_rows = "".join([f"| {contact[0]} | {contact[1]} | {contact[2]} |\n" for contact in all_contacts])
-	#                     markdown_table = f"**All Contact Form Details:**\n\n{table_header}{table_rows}"
-	#                     st.markdown(markdown_table)
-	#                 else:
-	#                     st.write("No contacts found.")
+	            if st.session_state["show_contacts"]:
+	                all_contacts = fetch_all_contacts()
+	                if len(all_contacts) > 0:
+	                    table_header = "| Name | Email | Message |\n| --- | --- | --- |\n"
+	                    table_rows = "".join([f"| {contact[0]} | {contact[1]} | {contact[2]} |\n" for contact in all_contacts])
+	                    markdown_table = f"**All Contact Form Details:**\n\n{table_header}{table_rows}"
+	                    st.markdown(markdown_table)
+	                else:
+	                    st.write("No contacts found.")
 
 
- #                # social_icons(30, 30, icon_images = ICONS_IMAGES, Youtube=youtube_url, LinkedIn=linkedin_url, GitHub=github_url, Wordpress=wordpress_url, Email=f"mailto:{email_url}", GoogleScholar = GoogleScholar_url, ResearchGate = ResearchGate_url, ORCID = ORCID_url),
+                # social_icons(30, 30, icon_images = ICONS_IMAGES, Youtube=youtube_url, LinkedIn=linkedin_url, GitHub=github_url, Wordpress=wordpress_url, Email=f"mailto:{email_url}", GoogleScholar = GoogleScholar_url, ResearchGate = ResearchGate_url, ORCID = ORCID_url),
 
-	#             st.markdown(
- #                    social_icons(80, 80, icon_images = ICONS_IMAGES, LinkedIn=linkedin_url, GitHub=github_url, Email=f"mailto:{email_url}", GoogleScholar = GoogleScholar_url, ResearchGate = ResearchGate_url, ORCID = ORCID_url),
-	#                 unsafe_allow_html=True)
-	#             st.markdown("")
-	#             #st.write("© 2023 Harry Chang")
-	#             #st.write("[LinkedIn](https://linkedin.com/in/harrychangjr) | [Github](https://github.com/harrychangjr) | [Linktree](https://linktr.ee/harrychangjr)")
-	#         with mid:
-	#             st.empty()
-	#         with image_column:
-	#             st.image(img_ifg)
- #            # with st.container():
- #            #     l, m, r = st.columns((0.11,2,0.1))
- #            #     with l:
- #            #         st.empty()
- #            #     with m:
- #            #         st.markdown(
- #            #             social_icons(30, 30, icon_images = ICONS_IMAGES, Youtube=youtube_url, LinkedIn=linkedin_url, GitHub=github_url, Wordpress=wordpress_url, Email=email_url, GoogleScholar = GoogleScholar_url, ResearchGate = ResearchGate_url, ORCID = ORCID_url), unsafe_allow_html=True)
- #            #     with r:
- #            #         st.empty()
-	# elif choose == "Resume":   
-	# 	st.header("Resume")
-	# 	_,pdf_download_btn, _ = st.columns((0.35,0.2,0.5))
-	# 	with pdf_download_btn:
-	# 		with open("Mohammed_Hammoud_CV.pdf", "rb") as file:
-	# 			btn = st.download_button(
-	# 				label="Download Resume",
-	# 				data=file,
-	# 				file_name="Mohammed_Hammoud_CV.pdf",
-	# 				mime="application/pdf"
-	# 				)
+	            st.markdown(
+                    social_icons(80, 80, icon_images = ICONS_IMAGES, LinkedIn=linkedin_url, GitHub=github_url, Email=f"mailto:{email_url}", GoogleScholar = GoogleScholar_url, ResearchGate = ResearchGate_url, ORCID = ORCID_url),
+	                unsafe_allow_html=True)
+	            st.markdown("")
+	            #st.write("© 2023 Harry Chang")
+	            #st.write("[LinkedIn](https://linkedin.com/in/harrychangjr) | [Github](https://github.com/harrychangjr) | [Linktree](https://linktr.ee/harrychangjr)")
+	        with mid:
+	            st.empty()
+	        with image_column:
+	            st.image(img_ifg)
+            # with st.container():
+            #     l, m, r = st.columns((0.11,2,0.1))
+            #     with l:
+            #         st.empty()
+            #     with m:
+            #         st.markdown(
+            #             social_icons(30, 30, icon_images = ICONS_IMAGES, Youtube=youtube_url, LinkedIn=linkedin_url, GitHub=github_url, Wordpress=wordpress_url, Email=email_url, GoogleScholar = GoogleScholar_url, ResearchGate = ResearchGate_url, ORCID = ORCID_url), unsafe_allow_html=True)
+            #     with r:
+            #         st.empty()
+	elif choose == "Resume":   
+		st.header("Resume")
+		_,pdf_download_btn, _ = st.columns((0.35,0.2,0.5))
+		with pdf_download_btn:
+			with open("Mohammed_Hammoud_CV.pdf", "rb") as file:
+				btn = st.download_button(
+					label="Download Resume",
+					data=file,
+					file_name="Mohammed_Hammoud_CV.pdf",
+					mime="application/pdf"
+					)
 
-	# 	_,pdf_col, _ = st.columns((0.1,1,0.1))
-	# 	with pdf_col:
-	# 		# st.markdown(pdf_link(RESUME_LINK, "Download resume "+get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["download"])), unsafe_allow_html=True)
-	# 		# st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["certificate"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
-	# 		show_pdf("Mohammed_Hammoud_CV.pdf")
+		_,pdf_col, _ = st.columns((0.1,1,0.1))
+		with pdf_col:
+			# st.markdown(pdf_link(RESUME_LINK, "Download resume "+get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["download"])), unsafe_allow_html=True)
+			# st.markdown(f"""[{get_icon(width=24, height=24, name="Missed", link=ICONS_IMAGES["certificate"])}]({PUBLICATION_URL})""", unsafe_allow_html=True)
+			show_pdf("Mohammed_Hammoud_CV.pdf")
 
 
 
