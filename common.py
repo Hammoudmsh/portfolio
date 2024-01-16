@@ -38,7 +38,7 @@ ORCID_url = "https://orcid.org/0000-0002-7967-9057"
 
 
 ICONS_IMAGES = {
-                "ABOUT_ME_IMAGE":"images/person_photo.png",
+                "ABOUT_ME_IMAGE":"person_photo.PNG",
                 "youtube": "https://img.icons8.com/ios-filled/100/ff8c00/youtube-play.png",
                 "linkedin": "https://img.icons8.com/fluency/48/linkedin.png",
                 "github": "https://img.icons8.com/metro/26/github.png",
